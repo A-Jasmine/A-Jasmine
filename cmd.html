@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD</title>
+    <link rel="stylesheet" href="cmd.css">
+    <link rel="shortcut icon" type="x-icon" href="images/layers.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <style>
+        #terminal {
+            font-family: 'Inconsolata', monospace;
+            padding-top: 15px; 
+            top: -50px;
+         
+        }
+        .input input {
+            padding: 10px;
+            width: calc(100% - 600px); 
+        }
+        .input span {
+            width: 80px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="terminal">
+        <div class="output">
+            <a href="home.html"><img src="images/layers.png" alt="Terminal Image" style="margin: -57px -5px;"></a>
+
+            <pre>
+<span class="names">BSCS A2022 - Members:
+Balmoja, Dorothy Zoe L.
+Jimenez, Althea J.</span>
+
+
+                _____   ___    ____    ___   ____               
+               |___ /  / _ \  |  _ \  / _ \ / ___|              
+                  |_\  | | |  | | | | || || \___ \              
+                ___) | | | |  | |_| | ||_|| ___) |             
+     ____      |____/  \___/  |____/  \___/ |____/       _      
+    / ___|  ___   _ __ ___   _ __ ___    __ _  _ __    __| | ___ 
+    | |    / _ \ | '_ ` _ \ | '_ ` _ \  / _` || '_ \  / _` |/ __|
+    | |___| (_) || | | | | || | | | | || (_| || | | || (_| |\__ \
+    \____| \___/ |_| |_| |_||_| |_| |_| \__,_||_| |_| \__,_||___/
+
+<span style="font-size: larger;">This is an interactive web terminal. For a list of 
+available commands, type <span class="glows">'help'.</span></span>
+</pre>
+</div>
+<style>
+    ::placeholder {
+        color: #a9a9a9; 
+    }
+</style>
+</div>
+<div id="userint">
+</div>
+<div class="userint">
+<div class="input">
+
+    <input type="text" id="commandInput" autofocus placeholder="Type 'help' to get started">
+    
+</div>
+</div>
+
+
+<script src="cmd.js"></script>
+</body>
+</html>

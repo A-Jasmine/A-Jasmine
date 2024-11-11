@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Inconsolata";
+    src: url("path/to/Inconsolata-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Inconsolata', monospace;
+    background-color: #084887;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 15px; 
+  }
+
+#terminal {
+    width: 80%;
+    margin: 1% 10% -3% 10%;
+    background-color: #084887;
+    border-radius: 3px;
+    padding: 10px;
+    
+}
+
+#userint {
+    width: 80%;
+    margin: 1% 10% -3% 10%;
+    background-color: #084887;
+    border-radius: 3px;
+    padding: 10px;
+}
+.userint {
+    width: 80%;
+    margin: 3% 10% -3% 10%;
+    background-color: #084887;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.output {
+    margin-bottom: 1px;
+    font-size: 14px; 
+}
+
+.input input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: yellow; 
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px; 
+    padding: 8px; 
+    position: relative; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    background-color: #084887;
+    background-color: rgba(60, 60, 60, 0.5);
+}
+
+
+.input input::after {
+    content: '';
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    height: 80%; 
+    background-color: pink; 
+    transform: translateY(-50%); 
+}
+
+.input input:focus::after {
+    width: auto;
+}
+
+
+.input input:focus {
+    outline: none;
+    color: yellow; 
+}
+
+
+
+.glow {
+    font-size: 14px; 
+    color: yellowgreen; 
+    text-shadow: 
+        0 0 5px rgba(212, 212, 212, 0.5), 
+        0 0 10px rgba(0, 255, 255, 0.5), 
+        0 0 15px rgba(0, 255, 255, 0.5); 
+}
+
+
+.glows {
+    font-size: 14px;
+    color: white; 
+    text-shadow: 0 0 10px #d4d4d4, 0 0 20px #00ffff, 0 0 30px #00ffff; 
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #00ffff, 0 0 30px #00ffff; 
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff; 
+    }
+}
+
+.names {
+    font-size: 14px; 
+    color: #2cda9d; 
+    text-shadow: 0 0 10px #baa5ff, 0 0 20px #baa5ff, 0 0 30px #baa5ff; 
+    margin-top: -20px; 
+}
+
+
+.input input {
+    padding: 5px; 
+}
+
+.output-box {
+    background-color: #22333b;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    max-width: 40%; 
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4)); 
+}
+
+.error {
+    background-color: #d9534f;
+}
+
+#terminal img {
+    top: 10px; 
+    left: -100px; 
+    width: 55px; 
+    height: 55px; 
+    filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.4)); 
+    position: relative;
+}
+
+
